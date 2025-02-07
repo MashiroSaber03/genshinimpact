@@ -5,10 +5,9 @@ from astrbot.api.star import Context, Star, register
 from astrbot.api.event import filter, AstrMessageEvent, MessageEventResult
 from astrbot.api.event.filter import event_message_type, EventMessageType
 
-# 获取当前模块 logger
+
 logger = logging.getLogger(__name__)
 
-# 原神圣经列表，包含从网上找到的以及原插件中的那句话
 ys_text_list = [
     "你说的对，但是《原神》是由米哈游自主研发的一款全新开放世界冒险游戏。游戏发生在一个被称作「提瓦特」的幻想世界，在这里，被神选中的人将被授予「神之眼」，导引元素之力。你将扮演一位名为「旅行者」的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘「原神」的真相。",
     "原神，启动！",
@@ -44,7 +43,7 @@ ys_text_list = [
     "又是美好的一天，从原神开始！"
 ]
 
-@register("genshinimpact", "Your Name", "一个原神启动插件", "1.1", "https://github.com/YourName/astrbot_plugin_genshinimpact")
+@register("genshinimpact", "ましろSaber", "一个原神启动插件", "1.1", "repo url")
 class GenshinImpactPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
